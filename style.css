@@ -1,0 +1,224 @@
+* {
+    font-family: 'Raleway', sans-serif;
+    box-sizing: border-box; 
+    padding: 0; 
+    margin: 0;
+}
+
+nav {
+    overflow: hidden;
+    background-color: black;
+  }
+  
+  nav a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  .dropdown {
+    float: left;
+    overflow: hidden;
+  }
+  
+  .dropdown .dropbtn {
+    font-size: 16px;  
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: black;
+    font-family: inherit;
+    margin: 0;
+  }
+  
+  nav a:hover, .dropdown:hover .dropbtn {
+    background-color: #0fff07;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    float: none;
+    color: rgb(228, 28, 28);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: transparent;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  * {padding: 0; margin: 0;}
+
+
+main > div {  
+  /* centrando o <p> dos divs */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3em;
+}
+
+/*  segundo div, "hero image" */
+div:nth-child(2) {
+  /* como o menu ocupa 10vh, este tem 90vh para o vermo inteiro. */
+  height: 90vh;
+  background-image: url("https://source.unsplash.com/7-2rPMvS5rU/800×600");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+/* terceiro div, "div seguinte" */
+div:nth-child(3) {
+  /* definindo altura e cor */
+  height: 90vh;
+  background: rgb(41, 40, 40);
+}
+
+/* penultimo div: background-attachment: fixed */
+div:nth-last-child(2) {
+  /* como tem menu e rodapé visíveis (10vh cada), define-se como altura 80vh. */
+  height: 80vh;
+  background-image: url("https://source.unsplash.com/Q6jyy3T-g1A/1280x720");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  align-items: start;
+}
+
+/* ultimo div */
+div:last-child {
+  /* definindo altura e cor */
+  height: 10vh;
+  background: black;
+  color: white;
+}
+
+button {
+    outline: none;
+    padding: 0.65rem 1.5rem;
+    font-size: 2rem;
+    position: relative;
+    background: transparent;
+    color: #0fff07;
+    text-transform: uppercase;
+    border: 3px solid #0fff07;
+    cursor: pointer;
+    transition: all 0.7s;
+    overflow: hidden;
+    border-radius: 40px;
+}
+
+button:hover{
+    color: #222228
+}
+
+button span {
+    transition: all 0.7s;
+    z-index: -1;
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 25%;
+    background: #0fff07;
+}
+
+button .first {
+    right: 100%;
+    top: 0;
+}
+
+button:hover .first {
+    top: 0;
+    right: 0;
+}
+
+button .second {
+    left: 25%;
+    top: -100%;
+}
+
+button:hover .second {
+    top: 0;
+    left: 50%;
+}
+
+button .third {
+    left: 50%;
+    top: 100%;
+}
+
+button:hover .third {
+    top: 0;
+    left: 25%;
+}
+
+button .fourth {
+    left: 100%;
+    top: 0;
+}
+
+button:hover .fourth {
+    top: 0;
+    left: 0;
+}
+
+.container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.container .box {
+    position: relative;
+    width: 20rem;
+    height: 20rem;
+    margin: 3rem;
+}
+
+.container .box:hover .imgBox {
+    transform: translate(-1.5rem, -1.5rem);
+}
+
+.container .box:hover .content {
+    transform: translate(3.5rem, 3.5rem);
+}
+
+.imgBox {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    transition: all 0.5s ease-in-out;
+}
+
+.imgBox img {
+    width: 20rem;
+    height: 20rem;
+    object-fit: cover;
+    resize: both;
+}
