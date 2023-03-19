@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200&display=swap" rel="stylesheet">
+        <link href="style.css" rel="stylesheet">
+        <meta charset="utf-8">
+        <meta name="author" content="João Serralha">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <body>
+            <video autoplay muted loop id="myVideo">
+                <source src="paris.mp4" type="video/mp4">
+            </video>
+
+            <div class="about">
+                <h1>Paris</h1>
+                <p>
+                    From its sun-dappled quays along the Seine to its quaint cafés in tranquil neighborhoods, Paris has always been known as one of the most beautiful cities in the world. In addition to its picturesque charm, this ancient city, which has been inhabited since about 7600 BCE, is steeped in culture, cuisine, art, architecture, and history. In short, the French capital contains multitudes from Notre Dame Cathedral to the Louvre to the Eiffel Tower.
+                </p>
+            </div>  
+            <picture>
+                <source srcset="louvresB.jpg"
+                    media="(max-width: 600px)">
+
+                <source srcset="parisplace.jpg"
+                    media="(max-width: 1500px)">
+
+                <source srcset="triompheB.jpg">
+
+                <img src="https://source.unsplash.com/7-2rPMvS5rU/800×600" alt="Paris">
+            </picture>          
+        </body>
+    </head>
+</html>
