@@ -36,7 +36,7 @@ margin: 0;
 }
 
 nav a:hover, .dropdown:hover .dropbtn {
-background-color: #0fff07;
+background-color: gray;
 }
 
 .dropdown-content {
@@ -92,12 +92,12 @@ background: rgb(41, 40, 40);
 
 .test2:nth-last-child(2) {
 height: 80vh;
-background-image: url("https://source.unsplash.com/7-2rPMvS5rU/800×600");
+background-image: url("https://source.unsplash.com/uTL8OIm1Mvw/800×600");
 background-repeat: no-repeat;
 background-attachment: fixed;
 background-position: center;
 background-size: cover;
-align-items: start;
+align-items: center;
 }
 
 /* ultimo div */
@@ -110,12 +110,12 @@ color: white;
 button {
   outline: none;
   padding: 0.65rem 1.5rem;
-  font-size: 2rem;
+  font-size: 1.5rem;
   position: relative;
   background: transparent;
-  color: #0fff07;
+  color: white;
   text-transform: uppercase;
-  border: 3px solid #0fff07;
+  border: 3px solid gray;
   cursor: pointer;
   transition: all 0.7s;
   overflow: hidden;
@@ -133,7 +133,7 @@ button span {
   position: absolute;
   height: 100%;
   width: 25%;
-  background: #0fff07;
+  background: gray;
 }
 
 button .first {
@@ -255,37 +255,37 @@ button:hover .fourth {
 }
 
 #author:hover {
-  transform: translate(0rem, 11rem);
+  transform: rotate(360deg);
   transition: all 0.5s ease-in-out;
   transition-duration: 2s;
 }
 
 #title:hover {
-  transform: translate(0rem, 11rem);
+  transform: rotate(360deg);
   transition: all 0.5s ease-in-out;
   transition-duration: 2s;
 }
 
 .test2 .poem1:hover {
-  transform: translate(0rem, 10rem);
+  transform: translate(0rem, -10rem);
   transition: all 0.5s ease-in-out;
   transition-duration: 2s;
 }
 
 .test2 .poem2:hover {
-  transform: translate(0rem, 10rem);
+  transform: translate(0rem, -10rem);
   transition: all 0.5s ease-in-out;
   transition-duration: 2s;
 }
 
 .test2 .poem3:hover {
-  transform: translate(0rem, 10rem);
+  transform: translate(0rem, -10rem);
   transition: all 0.5s ease-in-out;
   transition-duration: 2s;
 }
 
 .test2 .poem4:hover {
-  transform: translate(0rem, 11rem);
+  transform: translate(0rem, -11rem);
   transition: all 0.5s ease-in-out;
   transition-duration: 2s;
 }
@@ -304,4 +304,8 @@ button:hover .fourth {
   bottom: 0;
   min-width: 100%;
   min-height: 100%;
+}
+
+.footerPage{
+  background: rgb(41, 40, 40);
 }
